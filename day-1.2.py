@@ -1,7 +1,7 @@
 from operator import itemgetter
 
 # Read input file
-input_file = open("input-aoc23-1.1.txt", "r")
+input_file = open("inputs/day-1.txt", "r")
 
 # Convert input to a list, with each element corresponding to a line
 input_file = input_file.readlines()
