@@ -12,20 +12,13 @@ def extract_records(records: list) -> list:
 
     return time, distance
 
-
 def ways_to_win(time: int, distance: int) -> int:
     """Calculates the number of ways to win a race."""
 
     for t in range(time + 1):
         potential = t * (time - t)
         if potential > distance:
-            return time - 2*t + 1
+            print(time - 2*t + 1)
+            break
 
-def margin_of_error(records: list) -> int:
-    """Calculates the margin of error to win."""
-
-    time, distance = extract_records(records)
-    total = ways_to_win(time, distance)    
-    print(total)
-
-margin_of_error(input_file)
+ways_to_win(*extract_records(input_file))

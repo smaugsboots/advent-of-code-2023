@@ -12,7 +12,6 @@ def extract_records(records: list) -> list:
 
     return times, distances
 
-
 def ways_to_win(time: int, distance: int) -> int:
     """Calculates the number of ways to win a race."""
 
